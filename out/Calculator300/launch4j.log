@@ -1,0 +1,18 @@
+
+
+Version:	3.50
+CmdLine:	D:\a1pha\Development\Java\Projects\calculator3000\out\Calculator300\calculator3000.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\a1pha\Development\Java\Projects\calculator3000\out\Calculator300\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	JDK 21
+Check launcher:	D:\a1pha\Development\Java\Projects\calculator3000\out\Calculator300\JDK 21\bin\javaw.exe (OK)
+Version string: 1.021.000_002 / 64-Bit (OK)
+Launcher:	D:\a1pha\Development\Java\Projects\calculator3000\out\Calculator300\JDK 21\bin\javaw.exe
+Launcher args:	-jar "D:\a1pha\Development\Java\Projects\calculator3000\out\Calculator300\calculator3000.exe"
+Args length:	93/32768 chars
+Exit code:	0

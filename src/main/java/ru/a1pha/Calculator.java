@@ -17,13 +17,13 @@ public class Calculator {
     enum Constant {
         E, PI;
     }
-    private static final Map<Constant, Double> constantValue = Map.ofEntries(
+    private static final Map<Constant, Double> CONSTANT_VALUES = Map.ofEntries(
         entry(Constant.E, Math.E),
         entry(Constant.PI, Math.PI)
     );
 
     public static String getStringConstantValue(Constant constant) {
-        return String.valueOf(constantValue.get(constant)).replace(".", ",");
+        return String.valueOf(CONSTANT_VALUES.get(constant)).replace(".", ",");
     }
 
 
@@ -82,9 +82,9 @@ public class Calculator {
     }
 
     private static Map<AngleMode, Double> angleModeCoefficients = Map.ofEntries(
-        entry(AngleMode.DEG, 180 / constantValue.get(Constant.PI)),
+        entry(AngleMode.DEG, 180 / CONSTANT_VALUES.get(Constant.PI)),
         entry(AngleMode.RAD, 1.0),
-        entry(AngleMode.GRAD, 200 / constantValue.get(Constant.PI))
+        entry(AngleMode.GRAD, 200 / CONSTANT_VALUES.get(Constant.PI))
     );
     private static Map<AngleMode, String> angleModeString = Map.ofEntries(
         entry(AngleMode.DEG, "°"),
@@ -153,9 +153,9 @@ public class Calculator {
 
     public void setConstantArg(Constant constant) {
         if (getFirstArg() == null) {
-            this.setFirstArg(constantValue.get(constant));
+            this.setFirstArg(CONSTANT_VALUES.get(constant));
         } else {
-            this.setSecondArg(constantValue.get(constant));
+            this.setSecondArg(CONSTANT_VALUES.get(constant));
         }
     }
 
